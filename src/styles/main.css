@@ -5,6 +5,26 @@
   --error-color: #ff3333;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ff4081 0%, #ff6b6b 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .login-container {
   display: flex;
   justify-content: center;
@@ -88,4 +108,55 @@ input:focus {
 
 .register-link a:hover {
   text-decoration: underline;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 10px;
+  }
+
+  .login-box {
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+
+  input, .login-button {
+    padding: 0.8rem;
+  }
+}
+
+/* Estilos para móviles pequeños */
+@media (max-width: 320px) {
+  .login-box {
+    padding: 1rem;
+  }
+
+  input, .login-button {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Ajustes de altura para pantallas pequeñas */
+@media (max-height: 600px) {
+  .login-container {
+    padding: 10px;
+  }
+
+  .login-box {
+    margin: 0.5rem auto;
+  }
+}
+
+/* Ajustes de orientación */
+@media (orientation: landscape) and (max-height: 500px) {
+  .login-container {
+    padding: 5px;
+  }
+
+  .login-box {
+    padding: 1rem;
+    margin: 0.5rem auto;
+  }
 }
