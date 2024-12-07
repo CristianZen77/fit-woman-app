@@ -1,0 +1,17 @@
+{
+  "appId": "com.cecipalacios.gym",
+  "appName": "Ceci Palacios Gym",
+  "webDir": "build",
+  "bundledWebRuntime": false,
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 3000,
+      "backgroundColor": "#1a1a1a",
+      "androidSplashResourceName": "splash",
+      "androidScaleType": "CENTER_CROP"
+    }
+  },
+  "server": {
+    "androidScheme": "https"
+  }
+}

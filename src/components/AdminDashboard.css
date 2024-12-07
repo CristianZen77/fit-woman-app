@@ -1,0 +1,162 @@
+.admin-content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.admin-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.admin-nav h1 {
+  color: white;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.admin-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #ff4081;
+  color: white;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-disabled {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.button-danger {
+  background: #ff5252;
+}
+
+.button-success {
+  background: #4caf50;
+}
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.class-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.class-card h3 {
+  color: white;
+  margin: 0 0 15px 0;
+}
+
+.class-card p {
+  color: white;
+  margin: 8px 0;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.form-container h2 {
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-container input,
+.form-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.form-container input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-container select {
+  cursor: pointer;
+}
+
+.form-container option {
+  background: #2c3e50;
+  color: white;
+}
+
+.success-message,
+.error-message {
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.success-message {
+  background: rgba(76, 175, 80, 0.2);
+  color: #4caf50;
+}
+
+.error-message {
+  background: rgba(244, 67, 54, 0.2);
+  color: #f44336;
+}
+
+/* Estilos para móvil */
+@media (max-width: 768px) {
+  .admin-nav {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .admin-tabs {
+    flex-direction: column;
+  }
+
+  .users-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+}
