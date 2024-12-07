@@ -2,8 +2,8 @@ import React from 'react';
 import './ShareApp.css';
 
 const ShareApp = () => {
-  // URL temporal de descarga
-  const appUrl = "https://bit.ly/fit-woman-app";  // Necesitamos crear este link acortado
+  // URL de producción de la app
+  const appUrl = "https://fit-woman-app.vercel.app";
   const appName = "Fit Woman";
   const shareMessage = `¡Unite a ${appName}! 💪\n\nReservá tus clases de manera fácil y rápida.\n\nDescargá la app aquí: ${appUrl}\n\n¡Te esperamos! 🏋️‍♀️`;
 
